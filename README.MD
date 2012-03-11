@@ -4,6 +4,7 @@ Simply build the source with maven:
 
     $ mvn install
 
+    
 License
 =======
 Copyright (c) 2012, http://jadedwolf.com Some Rights Reserved.
