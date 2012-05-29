@@ -1,10 +1,25 @@
+<!--
+  Maven build file for NoFarm
+  Copyright (c) 2012 Jadedwolf
+  NoFarm is available under the GNU General Public License v3
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>jadedwolf.plugins.nofarm</groupId>
     <artifactId>NoFarm</artifactId>
-    <version>0.3.6</version>
+    <version>0.3.7</version>
     <name>NoFarm</name>
     <url>http://jadedwolf.com/</url>
+    <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <scm>
+    <connection>scm:git:git://github.com/Jadedwolf/NoFarm.git</connection>
+    <url>https://github.com/Jadedwolf/NoFarm</url>
+    <developerConnection>scm:git:git@github.com:Jadedwolf/NoFarm.git</developerConnection>
+    </scm>
+
     <repositories>
         <repository>
             <id>bukkit-repo</id>
@@ -28,7 +43,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.2.3-R0.2-SNAPSHOT</version>
+            <version>1.2.5-R3-SNAPSHOT</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
