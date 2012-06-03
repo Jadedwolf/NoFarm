@@ -11,7 +11,7 @@ import org.bukkit.event.entity.EntityDamageEvent;
 
 
 public class NoFarmEntityListener implements Listener {
-	
+
 	public NoFarmEntityListener(NoFarm instance) {
 	}
 
@@ -21,15 +21,5 @@ public class NoFarmEntityListener implements Listener {
         event.setDroppedExp(0);
         event.getDrops().clear();
         }
-  }
-    // Stop mobs from taking fall damge
-  @EventHandler
-  public void onEntityDamageMob(EntityDamageEvent event)
-  {
-		Entity e = event.getEntity();
-    if ((!(e instanceof Player)) && 
-		    (e.getLastDamageCause().getCause() == EntityDamageEvent.DamageCause.FALL)) {
-			event.setDamage(0);
-		}
   }
 }
