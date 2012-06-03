@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>jadedwolf.plugins.nofarm</groupId>
     <artifactId>NoFarm</artifactId>
-    <version>0.3.8</version>
+    <version>0.4.0</version>
     <name>NoFarm</name>
     <url>http://jadedwolf.com/</url>
     <properties>
