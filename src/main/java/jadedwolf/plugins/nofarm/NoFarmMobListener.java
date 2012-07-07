@@ -16,10 +16,12 @@ public class NoFarmMobListener implements Listener {
   @EventHandler
   public void onEntityDamageMob(EntityDamageEvent event)
   {
-		Entity e = event.getEntity();
+	Entity e = event.getEntity();
     if ((!(e instanceof Player)) &&
+             e.getLastDamageCause() != null &&
 		    (e.getLastDamageCause().getCause() == EntityDamageEvent.DamageCause.FALL)) {
 			event.setDamage(0);
+                        
 		}
   }
 }
