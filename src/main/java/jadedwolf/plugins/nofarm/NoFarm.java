@@ -16,7 +16,7 @@ public class NoFarm extends JavaPlugin {
 	public void onDisable() {
 		PluginDescriptionFile plugin = getDescription();
 		System.out.println(plugin.getName() + " version " + plugin.getVersion()
-				+ " is now bewbs");
+				+ " is now Disabled");
 	}
 
 	@Override
