@@ -1,7 +1,10 @@
 package jadedwolf.plugins.nofarm;
 
 import java.util.logging.Logger;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfigurationOptions;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -41,9 +44,26 @@ public class NoFarm extends JavaPlugin {
 
         PluginDescriptionFile plugin = getDescription();
         System.out.println(plugin.getName() + " version " + plugin.getVersion()
-                + " by mbcraft.com is now enabled.");
+                + " by lagcraft.com is now enabled.");
 
 
 
+    }
+
+    @Override
+    public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
+        if (commandLabel.equalsIgnoreCase("nofarm")) {
+            if (sender instanceof Player) {
+                Player player = (Player) sender;
+                if (args[0].equalsIgnoreCase("reload")) {
+                    reloadConfig();
+                    player.sendMessage("The config.yml file has been reloaded.");
+                }
+            } else {
+                reloadConfig();
+                System.out.println("NoFarm Config Reloaded");
+            }
+        }
+        return false;
     }
 }
