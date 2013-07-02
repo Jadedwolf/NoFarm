@@ -16,8 +16,10 @@ public class NoFarmEntityListener implements Listener {
     @EventHandler
     public void onEntityDeath(EntityDeathEvent event) {
         Entity entity = event.getEntity();
-        if (!(event.getEntity() instanceof Player)
+        if (event.getEntity() != null
+                && !(event.getEntity() instanceof Player)
                 && !(event.getEntity().getLastDamageCause() instanceof EntityDamageByEntityEvent)
+                && event.getEntity().getLastDamageCause() != null
                 && !(entity.getLastDamageCause().getCause() == EntityDamageEvent.DamageCause.ENTITY_ATTACK)) {
             event.getDrops().clear();
         }
