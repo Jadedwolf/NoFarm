@@ -6,7 +6,6 @@ main: jadedwolf.plugins.nofarm.NoFarm
 name: NoFarm
 startup: postworld
 url: http://jadedwolf.com/
-version: '0.8'
+version: '0.9'
 authors:
-  - McSpazzy
     - Jadedwolf

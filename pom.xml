@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>jadedwolf.plugins.nofarm</groupId>
     <artifactId>NoFarm</artifactId>
-    <version>0.8</version>
+    <version>0.9</version>
     <name>NoFarm</name>
     <url>http://jadedwolf.com/</url>
     <properties>
@@ -42,7 +42,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.6.1-R0.1-SNAPSHOT</version>
+            <version>1.7.2-R0.1-SNAPSHOT</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
